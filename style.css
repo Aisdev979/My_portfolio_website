@@ -1,0 +1,156 @@
+:root {
+    --seasalt: hsla(0, 0%, 98%, 1);
+    --night: hsla(0, 0%, 8%, 1);
+    --emerald: hsla(154, 58%, 61%, 1);
+    --eerie-black: hsla(0, 0%, 14%, 1);
+    --platinum: hsla(0, 0%, 85%, 1);
+
+}
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--eerie-black);
+    color: var(--seasalt);
+}
+
+p {
+    font-size: 0.85em;
+    line-height: 2em;
+    color: var(--platinum);
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+span {
+    border-bottom: 3px solid var(--emerald);
+}
+
+.nav--section {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.nav__logo {
+    cursor: pointer;
+    max-width: 35%;
+}
+
+.nav__menu {
+    cursor: pointer;
+    max-width: 20%;
+    padding-right: 2em;
+}
+
+.nav__close {
+    cursor: pointer;
+    max-width: 15%;
+}
+
+.nav__link {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 100em;
+    top: 0.2em;
+    padding: 2em;
+    background-color: var(--platinum);
+}
+
+.nav__link a {
+    padding: 1em;
+    text-decoration: none;
+    color: var(--eerie-black);
+    transition: all 1s ease-in;
+}
+
+.nav__link a:hover {
+    border-bottom: 3px solid var(--emerald);
+    width: 30%;
+}
+
+.profile {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.profile h1 {
+    max-width: 80%;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.profile img {
+    max-width: 15%;
+    padding-right: 2em;
+    margin-top: 0.5em;
+}
+
+.profile--link {
+    width: 25%;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: var(--seasalt);
+    border-bottom: 3px solid var(--emerald);
+    margin-top: 1em;
+}
+
+.about {
+    margin-top: 3em;
+}
+
+.about h2,
+#skills h2  {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.about img {
+    margin-bottom: 2em;
+}
+
+.about p {
+    margin-bottom: 2em;
+}
+
+#skills {
+    margin-top: 2em;
+}
+
+.row {
+    display: grid;
+}
+
+.row img {
+    display: block;
+    margin-inline: auto;
+    max-width: 40%;
+    margin-top: 2em;
+}
+
+.row h3 {
+    text-align: center;
+    margin-bottom: 2em;
+}

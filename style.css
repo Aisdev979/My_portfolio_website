@@ -160,6 +160,11 @@ span {
     margin-top: 2em;
 }
 
+#skils img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
 .row {
     display: grid;
 }

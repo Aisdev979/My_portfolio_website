@@ -232,12 +232,12 @@ footer {
 }
 
 .footer__grid p {
-    margin-bottom: 5em;
+    margin-bottom: 2em;
     text-align: center;
     font-size: 1.1rem;
 }
 
-.footer__grid form input,
+/* .footer__grid form input,
 .footer__grid form textarea {
     width: 100%;
     border: none;
@@ -250,13 +250,13 @@ footer {
 }
 
 .footer__grid form label,
-.footer__grid form button {
+.footer__grid form #submit {
     font-size: 1.3rem;
     color: var(--grey);
     font-weight: 600;
 }
 
-.footer__grid form button {
+.footer__grid form #submit {
     cursor: pointer;
     display: block;
     width: 60%;
@@ -267,6 +267,18 @@ footer {
     background-color: var(--night);
     padding-top: 1em;
     margin-bottom: 5em;
+} */
+
+.footer__grid a {
+    width: 50%;
+    margin: 0 auto;
+    text-decoration: none;
+    color: var(--eerie-black);
+    background-color: var(--emerald);
+    text-align: center;
+    padding: 1em;
+    border-radius: 3em;
+    margin-bottom: 2em;
 }
 
 footer h3,
@@ -369,18 +381,25 @@ footer h4 {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .footer__grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5em;
+    .footer__grid p {
+        max-width: 50%;
+        margin: 0 auto;
     }
 
-    .footer__grid form input,
+    /* .footer__grid form input,
     .footer__grid form textarea {
         font-size: 0.8rem;
-    }
+    }*/
 
-    .footer__grid form button {
+   /* .footer__grid form #submit {
         width: 60%;
         font-size: 1.2rem;
+    }*/
+
+    .footer__grid a {
+        width: 20%;
+        margin: 0 auto;
+        margin-top: 1em;
+        margin-bottom: 2em;
     }
-}
+} 

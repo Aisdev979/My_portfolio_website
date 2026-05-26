@@ -1,196 +1,793 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./SRC/style.css">
+  <!-- ═══════════════════════════════════════════
+       META & SEO
+  ═══════════════════════════════════════════ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary SEO -->
+  <title>Ogbebor Aisosa — Full Stack Developer</title>
+  <meta name="description" content="Full Stack Developer specializing in scalable web apps, cloud architecture, and modern JavaScript ecosystems. Available for freelance and full-time roles." />
+  <meta name="keywords" content="full stack developer, web developer, React, Node.js, TypeScript, cloud, portfolio" />
+  <meta name="author" content="Ogbebor Aisosa" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ogbeboraisosa.dev" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ogbeboraisosa.dev" />
+  <meta property="og:title" content="Ogbebor Aisosa — Full Stack Developer" />
+  <meta property="og:description" content="Building scalable, performant web applications from front to back." />
+  <meta property="og:image" content="https://ogbeboraisosa.dev/og-image.png" />
+  <meta property="og:site_name" content="Ogbebor Aisosa Dev" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@OgbeborAisosa3" />
+  <meta name="twitter:title" content="Ogbebor Aisosa — Full Stack Developer" />
+  <meta name="twitter:description" content="Building scalable, performant web applications from front to back." />
+  <meta name="twitter:image" content="https://ogbeboraisosa.dev/og-image.png" />
+
+  <!-- Security Headers (meta-level mitigations) -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data: https:; form-action 'self'; frame-ancestors 'none';" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Alex Morgan",
+    "url": "https://alexmorgan.dev",
+    "jobTitle": "Full Stack Developer",
+    "description": "Full Stack Developer specializing in scalable web applications",
+    "sameAs": [
+      "https://github.com/aisdev979",
+      "https://www.linkedin.com/in/aisosa-ogbebor-550073271/",
+      "https://x.com/OgbeborAisosa3"
+    ],
+    "knowsAbout": ["JavaScript", "TypeScript", "React", "Node.js", "PostgreSQL", "AWS"]
+  }
+  </script>
+
+  <!-- Fonts — JetBrains Mono + Syne -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./src/styles.css" />
 </head>
+
 <body>
-    <header id="home">
-        <section class="nav--section">
-            <img class="nav__logo" src="images/personal_asset/logo_prev.png" alt="My_logo">
-            <img class="nav__menu" src="images/SVG asset/menu-alt-05-svgrepo-com.svg" alt="">
-            <nav class="nav__link">
-                <img class="nav__close" src="images/SVG asset/close-square-svgrepo-com.svg" alt="">
-                <a href="#home">HOME</a>
-                <a href="#about">ABOUT</a>
-                <a href="#skills">SKILLS</a>
-                <a href="#project">PROJECT</a>
-                <a href="#footer">CONTACT</a>
-            </nav>
-        </section>
-        <section class="main--profile">
-            <section>
-                <img class="image" src="images/personal_asset/image-1.png" alt="">
-            </section>
-            <section class="profile">
-                <h1>Hello, I'm <span>Aisosa Matthew</span></h1>
-                <p>I'm a passionate Front-End Web Developer with
-                    a mission to bring your digital ideas to
-                    life. With a keen eye for design and a love
-                    for crafting engaging user experiences,
-                    I thrive on turning creative visions into
-                    functional, aesthetically pleasing websites.
-                </p>
-                <a href="https://github.com/Aisdev979"><img src="images/SVG asset/github-svgrepo-com.svg" alt="github-profile"></a>
-                <a href=""><img src="images/SVG asset/linkedin-svgrepo-com.svg" alt="linkedin-profile"></a>
-                <a href=""><img src="images/SVG asset/twitter-154-svgrepo-com.svg" alt="twitter-profile"></a>
-                <a href=""><img src="images/SVG asset/youtube-168-svgrepo-com.svg" alt="youtube-channel"></a>
-                <a class="profile--link" href="#footer">Contact Me</a>
-            </section>
-        </section>
-    </header>
-    <main>
 
-        <!-- About -->
-        <section class="about" id="about">
-            <h2>About Me</h2>
-           <section class="about__text">
-                <img src="images/personal_asset/IMG_20191123_084144-preview.png" alt="">
-                <section>
-                    <p>
-                        My Journey into Front-End Development began
-                        with a fascination for the intersection
-                        of technology and art. Over the years,
-                        I've honed my skills to transform complex
-                        concepts into visually stunning and user-friendly
-                        interfaces. My dedication to staying at the
-                        forefront of web technologies ensures that I can
-                        deliver not just websites but dynamic and immersive
-                        digital experiences.
-                    </p>
-                    <p>
-                        Front-End Development isn't just my profession;
-                        it's my passion. I find joy in the intricacies of code,
-                        the harmony of colors, and the seamless interaction
-                        betweena user and a website.Every project I undertake is
-                        an opportunity to blend creativity and functionality,
-                        resulting in web solutions that not only meet 
-                        your needs but exceed your expectations.
-                    </p>
-                    <p>
-                        Whether you're an entrepreneur with a groundbreaking
-                        startup idea or an established business looking to
-                        refresh your online presence, I'm here to collaborate
-                        with you. Let's work together to turn your concepts into
-                        captivating, responsive, and user-centric websites that
-                        leave a lasting impression.
-    
-                    </p>
-                    <p>
-                        Thank you for considering me as your Front-End
-                        Web Developer. I look forward to the opportunity
-                        of transforming your ideas into digital reality.
-    
-                    </p>
-                    <a class="about__btn" href="#home">Resume</a>
-                </section>   
-           </section>
-        </section>
+  <!-- ════ SKIP LINK ════ -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-        <!-- skills -->
-        <section id="skills">
-            <h2>My Skills Set</h2>
-            <p>
-                As a Front-End Web Developer, my toolkit includes a dynamic
-                range of technologies that I leverage to create stunning and
-                functional websites. Here's a glimpse of my skills that power
-                my passion for bringing web ideas to life. Let's collaborate
-                and turn these skills into a digital masterpiece for your project.
+  <!-- ════════════════════════════════════════════════
+       HEADER
+  ════════════════════════════════════════════════ -->
+  <header class="site-header" role="banner" id="site-header">
+    <div class="container">
+      <nav class="nav" role="navigation" aria-label="Primary navigation">
+
+        <a class="nav__logo" href="#" aria-label="Ogbebor Aisosa — home">
+          Ogbebor<span>.</span>Aisosa
+        </a>
+
+        <ul class="nav__links" role="list">
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#skills">Skills</a></li>
+          <li><a class="nav__link" href="#projects">Projects</a></li>
+          <li><a class="nav__link" href="#experience">Experience</a></li>
+        </ul>
+
+        <a class="nav__cta btn" href="#contact" aria-label="Contact Ogbebor">
+          Let's Talk
+        </a>
+
+        <button
+          class="nav__hamburger"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          id="hamburger-btn"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav
+      class="nav__mobile"
+      id="mobile-menu"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+      role="navigation"
+    >
+      <ul role="list">
+        <li><a class="nav__link" href="#about">About</a></li>
+        <li><a class="nav__link" href="#skills">Skills</a></li>
+        <li><a class="nav__link" href="#projects">Projects</a></li>
+        <li><a class="nav__link" href="#experience">Experience</a></li>
+        <li><a class="nav__link nav__cta" href="#contact">Let's Talk</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ════════════════════════════════════════════════
+       MAIN
+  ════════════════════════════════════════════════ -->
+  <main id="main-content" tabindex="-1">
+
+    <!-- ── HERO ── -->
+    <section class="hero section" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero__inner">
+
+          <!-- Content -->
+          <div class="hero__content">
+
+            <p class="hero__status" aria-label="Available for hire">
+              Available for opportunities
             </p>
-            <section class="row">
-                <section>
-                    <img src="images/SVG asset/html-5-svgrepo-com.svg" alt="">
-                    <h3>HTML</h3>
-                </section>
-                <section>
-                    <img src="images/SVG asset/css-3-svgrepo-com.svg" alt="">
-                    <h3>CSS</h3>
-                </section>
-                <section>
-                    <img src="images/SVG asset/javascript-svgrepo-com.svg" alt="">
-                    <h3>JAVASCRIPT</h3>
-                </section>
-                <section>
-                    <img src="images/SVG asset/tailwind-svgrepo-com.svg" alt="">
-                    <h3>TAILWINDCSS</h3>
-                </section>
-                <section>
-                    <img src="images/SVG asset/reactjs-svgrepo-com.svg" alt="">
-                    <h3>REACTJS</h3>
-                </section>
-                <section>
-                    <img src="images/SVG asset/browse-svgrepo-com.svg" alt="">
-                    <h3>WEB ACCESSABILITY</h3>
-                </section>
-            </section>
-        </section>
 
-        <!-- project -->
-        <section class="project" id="project">
-            <h2><span>Project</span></h2>
-            <section class="project__grid">
-                <section>
-                    <img src="./images/personal_asset/age-calculator.jpg" alt="">
-                    <h3>Age Calculator</h3>
-                    <p></p>
-                    <h4>HTML CSS JAVASCRIPT</h4>
-                    <a class="project__link" href="https://github.com/Aisdev979/Age_calculator">VIEW CODE</a>
-                    <a class="project__link" href="https://aisdev979.github.io/Age_calculator">VIEW PROJECT</a>
-                </section>
-                <section>
-                    <img src="./images/personal_asset/time-tracker.jpg" alt="">
-                    <h3>Time tracker app</h3>
-                    <p></p>
-                    <h4>HTML CSS JAVASCRIPT JSON</h4>
-                    <a class="project__link" href="https://github.com/Aisdev979/Time_tracker_dashboard">VIEW CODE</a>
-                    <a class="project__link" href="https://aisdev979.github.io/Time_tracker_dashboard">VIEW PROJECT</a>
-                </section>
-                <section>
-                    <img src="./images/personal_asset/desktop-design-copy.jpg" alt="">
-                    <h3>Fylo landing page</h3>
-                    <p></p>
-                    <h4>HTML CSS JAVASCRIPT</h4>
-                    <a class="project__link" href="https://github.com/Aisdev979/Fylo_landing_page">VIEW CODE</a>
-                    <a class="project__link" href="https://aisdev979.github.io/Fylo_landing_page">VIEW PROJECT</a>
-                </section>
-            </section>
-        </section>
-    </main>
-    <footer id="footer">
-       <section class="footer__grid">
-           <section>
-                <h2>Contact</h2>
-                <p>I would love to hear about your project and how
-                    i could help.Please fill in the form,
-                    and i'll get back to you as soon as possible.
-                </p>
-           </section>
-            <!-- <form action="https://formsubmit.co/aisosamatthew247@gmail.com" method="POST">
-                <label for="Name">NAME</label>
-                <input type="text" name="name" id="Name" autocomplete="name">
-                <p  id="error-name"></p>
-                <label for="Email">EMAIL</label>
-                <input type="email" name="email" id="Email" autocomplete="email">
-                <p id="error-email"></p>
-                <input type="hidden" name="_next" value="https://aisdev979.github.io/My_portfolio_website/thanks.html/">
-                <label for="Message">MESSAGE</label>
-                <textarea name="message" id="Message" cols="30" rows="10"></textarea>
-                <button id="submit" type="submit">SEND MESSAGE</button>
-            </form> -->
-            <a href="https://formsubmit.co/el/lehuta">SEND A MESSAGE</a>
-       </section>
-       <section>
-            <h3>AISDEV</h3>
-            <h4>Love to hear from you Aisdev &copy 2023.</h4>
-       </section>
-    </footer>
+            <p class="hero__greeting" aria-hidden="true">Hello, world — I'm</p>
 
-    <script src="main.js"></script>
+            <h1 class="hero__name" id="hero-heading">
+              <span class="hero__name-first">Aisosa</span>
+              <span class="hero__name-middle">Matthew</span>
+              <span class="hero__name-last">Ogbebor.</span>
+            </h1>
+
+            <p class="hero__role" aria-live="polite" aria-label="Full Stack Developer specializing in building scalable apps">
+              <span id="typed-text"></span><span class="cursor" aria-hidden="true"></span>
+            </p>
+
+            <p class="hero__desc">
+              I craft high-performance web applications end-to-end — from pixel-perfect
+              interfaces to battle-tested APIs and cloud infrastructure.
+              I believe great software is both an engineering challenge and an art form.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#projects" aria-label="View my work">
+                View My Work
+                <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a class="btn btn--outline" href="#contact" aria-label="Contact me">
+                Get in Touch
+              </a>
+            </div>
+
+            <div class="hero__socials" aria-label="Social media profiles">
+              <a class="social-link" href="https://github.com/Aisdev979" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z"/></svg>
+              </a>
+              <a class="social-link" href="https://www.linkedin.com/in/aisosa-ogbebor-550073271/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <a class="social-link" href="https://x.com/OgbeborAisosa3" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X profile">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.259 5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a class="social-link" href="mailto:aisdevinstitute@gmail.com" aria-label="Send an email">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </a>
+            </div>
+
+            <div class="hero__stats" aria-label="Career highlights">
+              <div class="stat">
+                <div class="stat__value" aria-label="1 year of experience">1</div>
+                <div class="stat__label">Year Experience</div>
+              </div>
+              <div class="stat">
+                <div class="stat__value" aria-label="1 projects shipped">1</div>
+                <div class="stat__label">Project Shipped</div>
+              </div>
+              <!-- <div class="stat">
+                <div class="stat__value" aria-label="12 happy clients">12</div>
+                <div class="stat__label">Happy Clients</div>
+              </div> -->
+              <div class="stat">
+                <div class="stat__value" aria-label="1200+ GitHub commits">1.2k</div>
+                <div class="stat__label">GitHub Commits</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual Code Card -->
+          <div class="hero__visual" aria-hidden="true">
+            <div class="code-card" role="img" aria-label="Code snippet illustration">
+              <div class="code-card__header">
+                <span class="code-card__dot"></span>
+                <span class="code-card__dot"></span>
+                <span class="code-card__dot"></span>
+                <span class="code-card__filename">developer.ts</span>
+              </div>
+              <div class="code-card__body">
+                <div class="code-line"><span class="code-num">1</span><span class="code-content"><span class="t-kw">const</span> <span class="t-var">developer</span> <span class="t-prop">= {</span></span></div>
+                <div class="code-line"><span class="code-num">2</span><span class="code-content">&nbsp;&nbsp;<span class="t-prop">name:</span> <span class="t-str">"Alex Morgan"</span>,</span></div>
+                <div class="code-line"><span class="code-num">3</span><span class="code-content">&nbsp;&nbsp;<span class="t-prop">role:</span> <span class="t-str">"Full Stack Dev"</span>,</span></div>
+                <div class="code-line"><span class="code-num">4</span><span class="code-content">&nbsp;&nbsp;<span class="t-prop">stack:</span> <span class="t-prop">[</span></span></div>
+                <div class="code-line"><span class="code-num">5</span><span class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"React"</span>, <span class="t-str">"TypeScript"</span>,</span></div>
+                <div class="code-line"><span class="code-num">6</span><span class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"Node.js"</span>, <span class="t-str">"PostgreSQL"</span>,</span></div>
+                <div class="code-line"><span class="code-num">7</span><span class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"AWS"</span>, <span class="t-str">"Docker"</span></span></div>
+                <div class="code-line"><span class="code-num">8</span><span class="code-content">&nbsp;&nbsp;<span class="t-prop">],</span></span></div>
+                <div class="code-line"><span class="code-num">9</span><span class="code-content">&nbsp;&nbsp;<span class="t-prop">available:</span> <span class="t-kw">true</span>,</span></div>
+                <div class="code-line"><span class="code-num">10</span><span class="code-content"><span class="t-prop">};</span></span></div>
+                <div class="code-line"><span class="code-num">11</span><span class="code-content"></span></div>
+                <div class="code-line"><span class="code-num">12</span><span class="code-content"><span class="t-cmt">// Let's build something great!</span></span></div>
+                <div class="code-line"><span class="code-num">13</span><span class="code-content"><span class="t-fn">hire</span><span class="t-prop">(</span><span class="t-var">developer</span><span class="t-prop">);</span></span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ABOUT ── -->
+    <section class="about section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+
+        <p class="section-label" aria-hidden="true">Who I Am</p>
+        <div class="about__layout">
+
+          <div class="about__text reveal">
+            <h2 class="section-title" id="about-heading">
+              Turning complex problems into<br><em>elegant solutions</em>
+            </h2>
+            <p>
+              I'm a <strong>full-stack developer</strong> with over 5 years of experience building
+              production-ready applications. My journey started with front-end development, but I've
+              expanded deep into <span class="highlight">backend systems</span>, cloud infrastructure,
+              and developer tooling.
+            </p>
+            <p>
+              I thrive in fast-paced environments where architecture decisions have real impact.
+              Whether it's designing a <strong>real-time data pipeline</strong> handling millions of
+              events or crafting a micro-interaction that delights users, I approach every layer of
+              the stack with the same rigor.
+            </p>
+            <p>
+              Outside of code, you'll find me contributing to open source, writing technical articles,
+              and mentoring developers in my local tech community. I believe in sharing knowledge as
+              much as building things.
+            </p>
+          </div>
+
+          <aside class="about__aside reveal" aria-label="Quick facts">
+            <div class="about__card">
+              <h3 class="about__card-title">Quick Info</h3>
+              <ul class="quick-info" role="list">
+                <li class="quick-info__item">
+                  <span class="quick-info__icon" aria-hidden="true">📍</span>
+                  <div>
+                    <div class="quick-info__label">Location</div>
+                    <div class="quick-info__value">Benin City, Nigeria</div>
+                  </div>
+                </li>
+                <li class="quick-info__item">
+                  <span class="quick-info__icon" aria-hidden="true">🎓</span>
+                  <div>
+                    <div class="quick-info__label">Education</div>
+                    <div class="quick-info__value">B.Sc. Software Engineering</div>
+                  </div>
+                </li>
+                <li class="quick-info__item">
+                  <span class="quick-info__icon" aria-hidden="true">💼</span>
+                  <div>
+                    <div class="quick-info__label">Status</div>
+                    <div class="quick-info__value">Open to Work</div>
+                  </div>
+                </li>
+                <li class="quick-info__item">
+                  <span class="quick-info__icon" aria-hidden="true">🌐</span>
+                  <div>
+                    <div class="quick-info__label">Languages</div>
+                    <div class="quick-info__value">English</div>
+                  </div>
+                </li>
+                <li class="quick-info__item">
+                  <span class="quick-info__icon" aria-hidden="true">☕</span>
+                  <div>
+                    <div class="quick-info__label">Fuel</div>
+                    <div class="quick-info__value">Cold brew & TypeScript</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SKILLS ── -->
+    <section class="skills section" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+
+        <p class="section-label" aria-hidden="true">Tech Stack</p>
+        <h2 class="section-title" id="skills-heading">
+          Tools I <em>master</em>
+        </h2>
+
+        <div class="skills__grid" role="list">
+
+          <article class="skill-category reveal" role="listitem">
+            <div class="skill-category__icon" aria-hidden="true">🖥️</div>
+            <h3 class="skill-category__title">Frontend</h3>
+            <ul class="skill-tags" aria-label="Frontend technologies" role="list">
+              <li><span class="skill-tag skill-tag--cyan">React</span></li>
+              <li><span class="skill-tag skill-tag--cyan">Next.js</span></li>
+              <li><span class="skill-tag skill-tag--cyan">TypeScript</span></li>
+              <li><span class="skill-tag skill-tag--cyan">Tailwind CSS</span></li>
+              <li><span class="skill-tag skill-tag--cyan">Framer Motion</span></li>
+              <li><span class="skill-tag skill-tag--cyan">GraphQL</span></li>
+              <li><span class="skill-tag skill-tag--cyan">Vite</span></li>
+            </ul>
+          </article>
+
+          <article class="skill-category reveal" role="listitem">
+            <div class="skill-category__icon" aria-hidden="true">⚙️</div>
+            <h3 class="skill-category__title">Backend</h3>
+            <ul class="skill-tags" aria-label="Backend technologies" role="list">
+              <li><span class="skill-tag skill-tag--violet">Node.js</span></li>
+              <li><span class="skill-tag skill-tag--violet">Express</span></li>
+              <li><span class="skill-tag skill-tag--violet">Go Lang</span></li>
+              <li><span class="skill-tag skill-tag--violet">REST APIs</span></li>
+              <li><span class="skill-tag skill-tag--violet">WebSockets</span></li>
+            </ul>
+          </article>
+
+          <article class="skill-category reveal" role="listitem">
+            <div class="skill-category__icon" aria-hidden="true">🗄️</div>
+            <h3 class="skill-category__title">Databases</h3>
+            <ul class="skill-tags" aria-label="Database technologies" role="list">
+              <li><span class="skill-tag skill-tag--green">PostgreSQL</span></li>
+              <li><span class="skill-tag skill-tag--green">MongoDB</span></li>
+              <li><span class="skill-tag skill-tag--green">Redis</span></li>
+              <li><span class="skill-tag skill-tag--green">MySQL</span></li>
+              <li><span class="skill-tag skill-tag--green">Prisma</span></li>
+              <!-- <li><span class="skill-tag skill-tag--green">Elasticsearch</span></li> -->
+            </ul>
+          </article>
+
+          <article class="skill-category reveal" role="listitem">
+            <div class="skill-category__icon" aria-hidden="true">☁️</div>
+            <h3 class="skill-category__title">Cloud & DevOps</h3>
+            <ul class="skill-tags" aria-label="Cloud and DevOps technologies" role="list">
+              <!-- <li><span class="skill-tag skill-tag--amber">AWS</span></li>
+              <li><span class="skill-tag skill-tag--amber">GCP</span></li>
+              <li><span class="skill-tag skill-tag--amber">Docker</span></li>
+              <li><span class="skill-tag skill-tag--amber">Kubernetes</span></li>
+              <li><span class="skill-tag skill-tag--amber">Terraform</span></li> -->
+              <li><span class="skill-tag skill-tag--amber">CI/CD</span></li>
+              <li><span class="skill-tag skill-tag--amber">GitHub Actions</span></li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ── -->
+    <section class="section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+
+        <div class="projects__header">
+          <div>
+            <p class="section-label" aria-hidden="true">My Work</p>
+            <h2 class="section-title" id="projects-heading">
+              Selected <em>Projects</em>
+            </h2>
+          </div>
+          <a class="btn btn--outline" href="https://github.com/Aisdev979" target="_blank" rel="noopener noreferrer" aria-label="View all projects on GitHub">
+            All Projects →
+          </a>
+        </div>
+
+        <div class="projects__grid" role="list">
+
+          <!-- Featured -->
+          <article class="project-card project-card--featured reveal" role="listitem">
+            <img class="project-card__thumb" src="./images/cine-mood.png" alt="Screenshot of CineMood, a movie recommendation app" />
+            <div class="project-card__body">
+              <ul class="project-card__tags" aria-label="Technologies used" role="list">
+                <li><span class="project-card__tag">HTML</span></li>
+                <li><span class="project-card__tag">CSS</span></li>
+                <li><span class="project-card__tag">Javascript</span></li>
+                <li><span class="project-card__tag">Expressjs</span></li>
+                <li><span class="project-card__tag">MongoDB</span></li>
+                <li><span class="project-card__tag">TMDB API</span></li>
+                <li><span class="project-card__tag">GROQ AI API</span></li>
+              </ul>
+              <h3 class="project-card__title">CineMood — Movie Recommendation App</h3>
+              <p class="project-card__desc">
+                A high-performance movie recommendation app leveraging the TMDB API and GROQ AI API.
+                Features real-time data fetching, personalized recommendations, and a sleek user interface.
+              </p>
+              <div class="project-card__footer">
+                <a class="project-link" href="https://cine-mood-seven.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Live demo of CineMood">
+                  <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                  Live Demo
+                </a>
+                <a class="project-link" href="https://github.com/Aisdev979/cineMood" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for CineMood">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- <article class="project-card project-card--sm reveal" role="listitem">
+            <div class="project-card__thumb">
+              <div class="project-card__thumb-bg gradient-b" aria-hidden="true">📊</div>
+            </div>
+            <div class="project-card__body">
+              <ul class="project-card__tags" aria-label="Technologies used" role="list">
+                <li><span class="project-card__tag">React</span></li>
+                <li><span class="project-card__tag">D3.js</span></li>
+                <li><span class="project-card__tag">Node.js</span></li>
+              </ul>
+              <h3 class="project-card__title">DataPulse — Analytics Dashboard</h3>
+              <p class="project-card__desc">
+                Real-time analytics dashboard with custom D3 visualizations, WebSocket data
+                streaming, and drill-down reporting for SaaS businesses.
+              </p>
+              <div class="project-card__footer">
+                <a class="project-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Live demo of DataPulse">
+                  <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                  Live Demo
+                </a>
+                <a class="project-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for DataPulse">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-card--md reveal" role="listitem">
+            <div class="project-card__thumb">
+              <div class="project-card__thumb-bg gradient-c" aria-hidden="true">🤖</div>
+            </div>
+            <div class="project-card__body">
+              <ul class="project-card__tags" aria-label="Technologies used" role="list">
+                <li><span class="project-card__tag">Python</span></li>
+                <li><span class="project-card__tag">FastAPI</span></li>
+                <li><span class="project-card__tag">OpenAI</span></li>
+                <li><span class="project-card__tag">Redis</span></li>
+              </ul>
+              <h3 class="project-card__title">Nexus AI — LLM Orchestration API</h3>
+              <p class="project-card__desc">
+                Scalable API layer for orchestrating multiple LLM providers with intelligent routing,
+                caching, and fallback strategies. Handles 10K+ requests/day.
+              </p>
+              <div class="project-card__footer">
+                <a class="project-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Documentation for Nexus AI">
+                  <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                  Docs
+                </a>
+                <a class="project-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for Nexus AI">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-card--md reveal" role="listitem">
+            <div class="project-card__thumb">
+              <div class="project-card__thumb-bg gradient-d" aria-hidden="true">💬</div>
+            </div>
+            <div class="project-card__body">
+              <ul class="project-card__tags" aria-label="Technologies used" role="list">
+                <li><span class="project-card__tag">React</span></li>
+                <li><span class="project-card__tag">Socket.io</span></li>
+                <li><span class="project-card__tag">MongoDB</span></li>
+              </ul>
+              <h3 class="project-card__title">ChatSpace — Real-Time Messenger</h3>
+              <p class="project-card__desc">
+                End-to-end encrypted messaging app with rooms, threads, file sharing,
+                and presence indicators. Sub-50ms message delivery latency.
+              </p>
+              <div class="project-card__footer">
+                <a class="project-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Live demo of ChatSpace">
+                  <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                  Live Demo
+                </a>
+                <a class="project-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for ChatSpace">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article> -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EXPERIENCE ── -->
+    <!-- <section class="experience section" id="experience" aria-labelledby="experience-heading">
+      <div class="container">
+
+        <p class="section-label" aria-hidden="true">Career</p>
+        <h2 class="section-title" id="experience-heading">
+          Where I've <em>worked</em>
+        </h2>
+
+        <div class="timeline" role="list">
+
+          <article class="timeline-item reveal" role="listitem">
+            <div class="timeline-item__meta">
+              <time class="timeline-item__date" datetime="2022/2025">2022 — Present</time>
+              <span class="timeline-item__badge">Full-time</span>
+            </div>
+            <h3 class="timeline-item__title">Senior Full Stack Engineer</h3>
+            <p class="timeline-item__company">Veritas Technologies · San Francisco, CA</p>
+            <p class="timeline-item__desc">
+              Led a team of 4 engineers to rebuild the core product from a monolith to
+              microservices architecture, reducing deployment time from days to minutes.
+            </p>
+            <ul class="timeline-item__highlights" aria-label="Key achievements">
+              <li class="highlight-item">Architected event-driven system processing 5M+ daily events using Kafka</li>
+              <li class="highlight-item">Reduced API response time by 60% through Redis caching and query optimization</li>
+              <li class="highlight-item">Implemented zero-downtime blue-green deployments on Kubernetes</li>
+              <li class="highlight-item">Mentored 3 junior developers and led bi-weekly architecture reviews</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item reveal" role="listitem">
+            <div class="timeline-item__meta">
+              <time class="timeline-item__date" datetime="2020/2022">2020 — 2022</time>
+              <span class="timeline-item__badge">Full-time</span>
+            </div>
+            <h3 class="timeline-item__title">Full Stack Developer</h3>
+            <p class="timeline-item__company">CloudBurst Studio · Remote</p>
+            <p class="timeline-item__desc">
+              Built and maintained SaaS products for 3 enterprise clients across fintech
+              and logistics verticals.
+            </p>
+            <ul class="timeline-item__highlights" aria-label="Key achievements">
+              <li class="highlight-item">Developed multi-tenant billing system integrating Stripe with complex proration logic</li>
+              <li class="highlight-item">Built real-time shipment tracking dashboard with live map integration</li>
+              <li class="highlight-item">Migrated legacy jQuery codebase to React, improving load time by 45%</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item reveal" role="listitem">
+            <div class="timeline-item__meta">
+              <time class="timeline-item__date" datetime="2019/2020">2019 — 2020</time>
+              <span class="timeline-item__badge">Contract</span>
+            </div>
+            <h3 class="timeline-item__title">Frontend Developer</h3>
+            <p class="timeline-item__company">Freelance · Remote</p>
+            <p class="timeline-item__desc">
+              Delivered 15+ web projects for startups and SMBs across e-commerce,
+              hospitality, and media sectors.
+            </p>
+            <ul class="timeline-item__highlights" aria-label="Key achievements">
+              <li class="highlight-item">Built custom CMS integrations with headless architectures (Contentful, Sanity)</li>
+              <li class="highlight-item">Achieved 95+ Lighthouse scores across all delivered projects</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section> -->
+
+    <!-- ── CONTACT ── -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="contact__layout">
+
+          <!-- Info -->
+          <div class="reveal">
+            <p class="section-label" aria-hidden="true">Say Hello</p>
+            <h2 class="contact__info-title" id="contact-heading">
+              Let's build<br>something <em>great</em>
+            </h2>
+            <p class="contact__desc">
+              Whether you have a project in mind, a role to fill, or just want to connect —
+              my inbox is always open. I'll do my best to get back to you within 24 hours.
+            </p>
+
+            <address>
+              <ul class="contact__channels" role="list">
+                <li>
+                  <a class="contact-channel" href="mailto:hello@alexmorgan.dev" aria-label="Send email to hello@alexmorgan.dev">
+                    <div class="contact-channel__icon" aria-hidden="true">✉️</div>
+                    <div>
+                      <div class="contact-channel__label">Email</div>
+                      <div class="contact-channel__value">aisdevinstitute@gmail.com</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="contact-channel" href="https://www.linkedin.com/in/aisosa-ogbebor-550073271/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                    <div class="contact-channel__icon" aria-hidden="true">💼</div>
+                    <div>
+                      <div class="contact-channel__label">LinkedIn</div>
+                      <div class="contact-channel__value">/in/aisosa-ogbebor-550073271</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="contact-channel" href="https://github.com/alexmorgan" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                    <div class="contact-channel__icon" aria-hidden="true">🐙</div>
+                    <div>
+                      <div class="contact-channel__label">GitHub</div>
+                      <div class="contact-channel__value">@aisdev979</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <!-- Form -->
+          <div class="reveal">
+            <div class="contact__form" id="contact-form-wrapper">
+              <form
+                id="contact-form"
+                novalidate
+                aria-label="Contact form"
+              >
+                <div class="form-group" id="fg-name">
+                  <label class="form-label" for="name">
+                    Name <span class="required" aria-label="required">*</span>
+                  </label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your full name"
+                    autocomplete="name"
+                    required
+                    aria-required="true"
+                    aria-describedby="name-error"
+                  />
+                  <p class="form-error" id="name-error" role="alert" aria-live="polite">
+                    Please enter your name.
+                  </p>
+                </div>
+
+                <div class="form-group" id="fg-email">
+                  <label class="form-label" for="email">
+                    Email <span class="required" aria-label="required">*</span>
+                  </label>
+                  <input
+                    class="form-input"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="your@email.com"
+                    autocomplete="email"
+                    required
+                    aria-required="true"
+                    aria-describedby="email-error"
+                  />
+                  <p class="form-error" id="email-error" role="alert" aria-live="polite">
+                    Please enter a valid email address.
+                  </p>
+                </div>
+
+                <div class="form-group" id="fg-subject">
+                  <label class="form-label" for="subject">Subject</label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="What's this about?"
+                    autocomplete="off"
+                  />
+                </div>
+
+                <div class="form-group" id="fg-message">
+                  <label class="form-label" for="message">
+                    Message <span class="required" aria-label="required">*</span>
+                  </label>
+                  <textarea
+                    class="form-textarea"
+                    id="message"
+                    name="message"
+                    placeholder="Tell me about your project or opportunity..."
+                    required
+                    aria-required="true"
+                    aria-describedby="message-error"
+                  ></textarea>
+                  <p class="form-error" id="message-error" role="alert" aria-live="polite">
+                    Please enter a message (at least 10 characters).
+                  </p>
+                </div>
+
+                <!-- Honeypot (anti-spam) -->
+                <div style="display:none" aria-hidden="true">
+                  <label for="website">Leave this blank</label>
+                  <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+                </div>
+
+                <button
+                  class="form-submit"
+                  type="submit"
+                  id="form-submit-btn"
+                  aria-label="Send message"
+                >
+                  Send Message →
+                </button>
+              </form>
+
+              <div class="form-success" id="form-success" role="status" aria-live="polite" aria-label="Message sent successfully">
+                <div class="form-success__icon" aria-hidden="true">✅</div>
+                <p class="form-success__text">Message sent! I'll be in touch soon.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__brand">
+          Designed &amp; built by <strong>Aisosa Matthew Ogbebor</strong> · © <span id="footer-year"></span>
+        </p>
+        <nav class="footer__links" aria-label="Footer navigation">
+          <a class="footer__link" href="#about">About</a>
+          <a class="footer__link" href="#projects">Projects</a>
+          <a class="footer__link" href="#contact">Contact</a>
+        </nav>
+        <div class="footer__socials" aria-label="Social media links">
+          <a class="social-link" href="https://github.com/Aisdev979" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z"/></svg>
+          </a>
+          <a class="social-link" href="https://www.linkedin.com/in/aisosa-ogbebor-550073271/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button
+    class="back-to-top"
+    id="back-to-top"
+    aria-label="Scroll back to top"
+    title="Back to top"
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <!-- ════════════════════════════════════════════════
+       JAVASCRIPT
+  ════════════════════════════════════════════════ -->
+  <script src="main.js"></script>
+
 </body>
 </html>
